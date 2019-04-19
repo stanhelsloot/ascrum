@@ -1,0 +1,55 @@
+<!-- Stan Helsloot -->
+<!-- ASCRUM inschrijfformulier  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<!-- <script src="mail.js" charset="utf-8"></script> -->
+    <!-- <script src="add_admission.js" charset="utf-8"></script> -->
+		<title></title>
+	</head>
+	<body>
+		<div class="appform">
+			<h1>Inschrijfformulier</h1>
+			<form action="/" method="post">
+				Voornaam*:<br>
+				<input type="text" name="Voornaam*" required><br>
+				Achternaam*:<br>
+				<input type="text" name="Achternaam*" required><br>
+				E-mailadress*:<br>
+				<input type="email" name="Email*" required><br>
+				Opleiding:<br>
+				<input type="text" name="Opleiding*"><br>
+				Opleidingsinstelling*:<br>
+				<input type="text" name="Opleidingsinstelling*" required><br>
+				Geslacht:<br>
+				<select class="geslacht" name="Geslacht">
+					<option value="Man">Man</option>
+					<option value="Vrouw">Vrouw</option>
+				</select><br>
+				<!-- Highlighten wanneer vrouw wordt geselecteerd?  -->
+				Let op! Als je je als vrouw aanmeldt zul je in contact gebracht worden met onze partner: <a href="https://www.aacrugby.com/">Het AAC vrouwen rugby team</a>.<br>
+				Hoe heb je van ons gehoord?*<br>
+				<select class="kennis" name="kennis">
+					<option value="Vrienden">Vrienden/kennisen</option>
+					<option value="Lidworden">lidwordeninamsterdam.nl</option>
+					<option value="Internet">Internet</option>
+					<option value="Intro">Introductieweek of introductiedag van studie</option>
+					<option value="Anders (vermeldt dit hieronder a.u.b.)">Anders</option>
+				</select><br>
+				Je bericht <br>
+				<textarea name="anders" rows="8" cols="80"></textarea><br>
+
+				<input type="radio" name="ervaring" value="False" required>
+				Ik heb geen ervaring met rugby.
+				<input type="radio" name="ervaring" value="True">
+				Ik heb ervaring met rugby.<br>
+				<!-- <input type="submit" name="Sumbit" value="Send"> -->
+				<button type="submit" value="submit">Submit</button>
+			</form>
+
+
+		</div>
+
+	</body>
+</html>
